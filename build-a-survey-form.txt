@@ -1,4 +1,4 @@
-** start of undefined **
+** start of html **
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,9 +68,9 @@
   </body>
 </html>
 
-** end of undefined **
+** end of html **
 
-** start of undefined **
+** start of css **
 
 :root {
   --color-white: #f3f3f3;
@@ -242,5 +242,5 @@ form {
   cursor: pointer;
 }
 
-** end of undefined **
+** end of css **
 
