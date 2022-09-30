@@ -91,8 +91,7 @@ blockquote {
   max-width: 545px;
   text-align: center;
   background-color: var(--color-tan);
-  display: flex;
-  align-items: center;
+  display: inline-block;
 }
 
 h3 {
