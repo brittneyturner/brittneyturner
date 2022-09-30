@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Oconee County Civic Center</h1>
+    <description id="title">Reservation Inquiry Form</description>
+      <p id="description">Your input is valuable to us - Please fill out the fields below.</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label">Name</label>
+          <input id="name" type="text" placeholder="First & Last Name" class="form-control" required></input>
+      </div>
+      <div class="form-group">
+        <label id="email-label">Email</label>
+          <input id="email" type="email" placeholder="example@email.com" class="form-control" required></input>
+       </div>
+       <div class="form-group">
+          <label id="dropdown-label">How did you hear about us?</label>
+            <select id="dropdown" class="form-control">
+               <option value="choose-one" disabled selected hidden>Choose One</option>
+               <option value="referral">Referral</option>
+               <option value="social-media">Social Media</option>
+               <option value="google">Google</option>
+               <option value="other">Other</option>
+           </select>
+      </div>
+      <div class="form-group">
+        <label id="checkbox-label">What venue space are you interested in?</label>
+          <input class="input-checkbox" type="checkbox" value="eb">Entire Building</input>
+            <br>
+          <input class="input-checkbox" type="checkbox" value="th">Theatre</input>
+            <br>
+          <input class="input-checkbox" type="checkbox" value="br">Banquet Room</input>
+            <br>
+          <input class="input-checkbox" type="checkbox" value="con">Concessions</input>
+            <br>
+          <input class="input-checkbox" type="checkbox" value="rot">Rotunda</input>
+      </div>
+      <div class="form-group">
+          <label id="number-label">Estimated Attendance</label>
+            <input id="number" type="number" min="0" max="850" placeholder="Type or Select" class="form-control"></input>
+       </div>
+      <div class="form-group">
+      <label id="radio-label">Would you like to tour our facility?</label>
+        <input name="radio" type="radio" value="yes" class="input-radio">Yes</input>
+        <input name="radio" type="radio" value="no" class="input-radio">No</input>
+      </div>
+      <div class="form-group">
+      <label id="radio-2-label">Would you like your event added to our Public Event Calendar?</label>
+        <input name="radio-2" type="radio" value="yes" class="input-radio">Yes</input>
+        <input name="radio-2" type="radio" value="no" class="input-radio">No</input>
+      </div>
+      <div class="form-group">
+      <label id="textarea-label">Additional notes for us:</label>
+        <textarea class="form-control" placeholder="Type Here."></textarea>
+      </div>
+      <div class="form-group">
+      <label id="submit-label"></label>
+          <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
