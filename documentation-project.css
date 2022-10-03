@@ -1,0 +1,160 @@
+:root {
+  --color1-: white;
+  --color2-: #c2dde6;
+  --color3-: #431c5d;
+  --color4-: #e05915;
+  --color5-: #cdd422;
+}
+
+html, body {
+  min-width: 290px;
+  background-color: var(--color1-);
+  font-family: arial, sans-serif;
+  line-height: 1.5;
+  color: var(--color5-);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+header {
+  color: var(--color4-);
+  margin: 10px;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar {
+  position: fixed;
+  overflow: hidden;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  border-right: solid;
+  border-color: var(--color5-);
+}
+
+.navbar-nav {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.nav-item {
+  color: var(--color2-);
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 30px;
+  color: var(--color3-);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section {
+  color: var(--color3-);
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+  list-style: none;
+}
+
+a:link {
+  color: var(--color3-);
+}
+
+a:hover {
+  color: var(--color4-);
+}
+
+#source:visited {
+  color: var(--color5-);
+}
+
+code {
+  display: block;
+  text-align: center;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1;
+  background-color: var(--color2-);
+  color: var(--color4-);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.image, img {
+  margin: 10px;
+  text-align: center;
+
+}
+
+/*mobile*/
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: var(--color1-);
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
